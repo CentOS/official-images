@@ -1,12 +1,14 @@
-# this file was generated using https://github.com/composer/docker/blob/4ff81ce2e854771f20205afeb474bbaf00a10363/generate-manifest.sh
+# this file was generated using https://github.com/composer/docker/blob/f395cdc5c43a42f804915b1b7debe1cd0817870e/generate-stackbrew-library.sh
 
 Maintainers: Composer (@composer), Rob Bast (@alcohol)
 GitRepo: https://github.com/composer/docker.git
 
-Tags: 1.2.4, 1.2, 1, latest
-GitCommit: 690f3d623ac1ba30be337a254b2126584e6e2aa5
-Directory: 1.2
+Tags: 2.0.8, 2.0, 2, latest
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, s390x
+GitCommit: 582c6f4e10b6b8fbf9bc1c5b02d6ec24694fe8d4
+Directory: 2.0
 
-Tags: 1.1.3, 1.1
-GitCommit: be6ecf58913f704399d11a352818b22951832a60
-Directory: 1.1
+Tags: 1.10.19, 1.10, 1
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, s390x
+GitCommit: 582c6f4e10b6b8fbf9bc1c5b02d6ec24694fe8d4
+Directory: 1.10

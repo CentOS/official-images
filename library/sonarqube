@@ -1,11 +1,19 @@
-# maintainer: David Gageot <david.gageot@sonarsource.com> (@dgageot)
+Maintainers: Janos Gyerik <janos.gyerik@sonarsource.com> (@janos-ss),
+             Julien Lancelot <julien.lancelot@sonarsource.com> (@julienlancelot),
+             Christophe Levis <christophe.levis@sonarsource.com> (@christophelevis),
+             Pierre Guillot <pierre.guillot@sonarsource.com> (@pierre-guillot-sonarsource),
+             Michal Duda <michal.duda@sonarsource.com> (@michal-duda-sonarsource)
+GitRepo: https://github.com/SonarSource/docker-sonarqube.git
+GitCommit: cccf2b692431e2eca2bb77ab9ae749b2b54ddf6a
 
+Tags: 7.9.5-community, 7.9-community, lts
+Directory: 7/community
 
-latest: git://github.com/SonarSource/docker-sonarqube@f63921d773162fde17179f9cc5e78640c88b2ae6 6.2
-6.2: git://github.com/SonarSource/docker-sonarqube@f63921d773162fde17179f9cc5e78640c88b2ae6 6.2
-lts: git://github.com/SonarSource/docker-sonarqube@f63921d773162fde17179f9cc5e78640c88b2ae6 5.6.4
-5.6.4: git://github.com/SonarSource/docker-sonarqube@f63921d773162fde17179f9cc5e78640c88b2ae6 5.6.4
-alpine: git://github.com/SonarSource/docker-sonarqube@f63921d773162fde17179f9cc5e78640c88b2ae6 6.2-alpine
-6.2-alpine: git://github.com/SonarSource/docker-sonarqube@f63921d773162fde17179f9cc5e78640c88b2ae6 6.2-alpine
-lts-alpine: git://github.com/SonarSource/docker-sonarqube@f63921d773162fde17179f9cc5e78640c88b2ae6 5.6.4-alpine
-5.6.4-alpine: git://github.com/SonarSource/docker-sonarqube@f63921d773162fde17179f9cc5e78640c88b2ae6 5.6.4-alpine
+Tags: 8.6.0-community, 8.6-community, 8-community, community, latest
+Directory: 8/community
+
+Tags: 8.6.0-developer, 8.6-developer, 8-developer, developer
+Directory: 8/developer
+
+Tags: 8.6.0-enterprise, 8.6-enterprise, 8-enterprise, enterprise
+Directory: 8/enterprise

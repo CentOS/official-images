@@ -1,29 +1,40 @@
-# this file is generated via https://github.com/docker-library/redis/blob/5169c4beff205f6523b16aaa17d8297f5ebcf9f9/generate-stackbrew-library.sh
+# this file is generated via https://github.com/docker-library/redis/blob/4ef411f3182868638f538798966a48b585ecce24/generate-stackbrew-library.sh
 
 Maintainers: Tianon Gravi <admwiggin@gmail.com> (@tianon),
              Joseph Ferguson <yosifkit@gmail.com> (@yosifkit)
 GitRepo: https://github.com/docker-library/redis.git
 
-Tags: 3.0.7, 3.0
-GitCommit: 6cb8a8015f126e2a7251c5d011b86b657e9febd6
-Directory: 3.0
+Tags: 6.2-rc1, 6.2-rc, rc, 6.2-rc1-buster, 6.2-rc-buster, rc-buster
+Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, mips64le, ppc64le, s390x
+GitCommit: 4ef411f3182868638f538798966a48b585ecce24
+Directory: 6.2-rc
 
-Tags: 3.0.7-32bit, 3.0-32bit
-GitCommit: 6cb8a8015f126e2a7251c5d011b86b657e9febd6
-Directory: 3.0/32bit
+Tags: 6.2-rc1-alpine, 6.2-rc-alpine, rc-alpine, 6.2-rc1-alpine3.12, 6.2-rc-alpine3.12, rc-alpine3.12
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, s390x
+GitCommit: 4ef411f3182868638f538798966a48b585ecce24
+Directory: 6.2-rc/alpine
 
-Tags: 3.0.7-alpine, 3.0-alpine
-GitCommit: c49a42f6efcd2b971e43e93116a976b058035544
-Directory: 3.0/alpine
+Tags: 6.0.9, 6.0, 6, latest, 6.0.9-buster, 6.0-buster, 6-buster, buster
+Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, mips64le, ppc64le, s390x
+GitCommit: 7ccc22760cc9b659916678a52654be8f43757551
+Directory: 6.0
 
-Tags: 3.2.6, 3.2, 3, latest
-GitCommit: 2e14b84ea86939438834a453090966a9bd4367fb
-Directory: 3.2
+Tags: 6.0.9-alpine, 6.0-alpine, 6-alpine, alpine, 6.0.9-alpine3.12, 6.0-alpine3.12, 6-alpine3.12, alpine3.12
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, s390x
+GitCommit: 7ccc22760cc9b659916678a52654be8f43757551
+Directory: 6.0/alpine
 
-Tags: 3.2.6-32bit, 3.2-32bit, 3-32bit, 32bit
-GitCommit: 2e14b84ea86939438834a453090966a9bd4367fb
-Directory: 3.2/32bit
+Tags: 5.0.10, 5.0, 5, 5.0.10-buster, 5.0-buster, 5-buster
+Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, mips64le, ppc64le, s390x
+GitCommit: 1779e83980f7cc0e197c649ba560306991e2e4c6
+Directory: 5.0
 
-Tags: 3.2.6-alpine, 3.2-alpine, 3-alpine, alpine
-GitCommit: 2e14b84ea86939438834a453090966a9bd4367fb
-Directory: 3.2/alpine
+Tags: 5.0.10-32bit, 5.0-32bit, 5-32bit, 5.0.10-32bit-buster, 5.0-32bit-buster, 5-32bit-buster
+Architectures: amd64
+GitCommit: 1779e83980f7cc0e197c649ba560306991e2e4c6
+Directory: 5.0/32bit
+
+Tags: 5.0.10-alpine, 5.0-alpine, 5-alpine, 5.0.10-alpine3.12, 5.0-alpine3.12, 5-alpine3.12
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, s390x
+GitCommit: 1779e83980f7cc0e197c649ba560306991e2e4c6
+Directory: 5.0/alpine

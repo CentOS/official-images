@@ -1,6 +1,30 @@
-Maintainers: Ivan Kozlovic <ivan.kozlovic@apcera.com> (@kozlovic)
-
-Tags: 0.3.4, latest
+Maintainers: Ivan Kozlovic <ivan@synadia.com> (@kozlovic)
 GitRepo: https://github.com/nats-io/nats-streaming-docker.git
-GitCommit: 5ba3680f2232ea7ef652aaaab8992e891894e7d3
+GitCommit: 70a87b9e248c9a04e9b6c320164522217b7a5269
 
+Tags: 0.20.0-alpine3.12, 0.20-alpine3.12, alpine3.12, 0.20.0-alpine, 0.20-alpine, alpine
+Architectures: amd64, arm32v6, arm32v7, arm64v8
+Directory: 0.20.0/alpine3.12
+
+Tags: 0.20.0-scratch, 0.20-scratch, scratch, 0.20.0-linux, 0.20-linux, linux
+SharedTags: 0.20.0, 0.20, latest
+Architectures: amd64, arm32v6, arm32v7, arm64v8
+Directory: 0.20.0/scratch
+
+Tags: 0.20.0-windowsservercore-1809, 0.20-windowsservercore-1809, windowsservercore-1809
+SharedTags: 0.20.0-windowsservercore, 0.20-windowsservercore, windowsservercore
+Architectures: windows-amd64
+Directory: 0.20.0/windowsservercore-1809
+Constraints: windowsservercore-1809
+
+Tags: 0.20.0-nanoserver-1809, 0.20-nanoserver-1809, nanoserver-1809
+SharedTags: 0.20.0-nanoserver, 0.20-nanoserver, nanoserver, 0.20.0, 0.20, latest
+Architectures: windows-amd64
+Directory: 0.20.0/nanoserver-1809
+Constraints: nanoserver-1809, windowsservercore-1809
+
+Tags: 0.20.0-windowsservercore-ltsc2016, 0.20-windowsservercore-ltsc2016, windowsservercore-ltsc2016
+SharedTags: 0.20.0-windowsservercore, 0.20-windowsservercore, windowsservercore
+Architectures: windows-amd64
+Directory: 0.20.0/windowsservercore-ltsc2016
+Constraints: windowsservercore-ltsc2016

@@ -1,53 +1,45 @@
-# this file is generated via https://github.com/docker-library/docker/blob/a7fc73eef011c47cc2518149bc77a4b9bc7f9f41/generate-stackbrew-library.sh
+# this file is generated via https://github.com/docker-library/docker/blob/12d1c2763b54d29137ec448a3e4ad1a9aefae1a0/generate-stackbrew-library.sh
 
 Maintainers: Tianon Gravi <tianon@dockerproject.org> (@tianon),
              Joseph Ferguson <yosifkit@gmail.com> (@yosifkit)
 GitRepo: https://github.com/docker-library/docker.git
 
-Tags: 1.13.0-rc3, 1.13-rc, rc
-GitCommit: e3d26cada8093a8a6814e7b341f03298d1b276fb
-Directory: 1.13-rc
+Tags: 20.10.2, 20.10, 20, latest
+Architectures: amd64, arm32v6, arm32v7, arm64v8
+GitCommit: 72ed002682df9e778da1fc8f0aa2ea1a0b9a3986
+Directory: 20.10
 
-Tags: 1.13.0-rc3-dind, 1.13-rc-dind, rc-dind
-GitCommit: c1af76ec4c97ff24dcf6675b55b12105216dc711
-Directory: 1.13-rc/dind
+Tags: 20.10.2-dind, 20.10-dind, 20-dind, dind
+Architectures: amd64, arm32v6, arm32v7, arm64v8
+GitCommit: 094faa88f437cafef7aeb0cc36e75b59046cc4b9
+Directory: 20.10/dind
 
-Tags: 1.13.0-rc3-git, 1.13-rc-git, rc-git
-GitCommit: 737f83092a47b012d09a0cbf0ed72759550301cb
-Directory: 1.13-rc/git
+Tags: 20.10.2-dind-rootless, 20.10-dind-rootless, 20-dind-rootless, dind-rootless
+Architectures: amd64
+GitCommit: 72ed002682df9e778da1fc8f0aa2ea1a0b9a3986
+Directory: 20.10/dind-rootless
 
-Tags: 1.12.4, 1.12, 1, latest
-GitCommit: 1c73734649299a17d1472fb206b992a544bd1777
-Directory: 1.12
+Tags: 20.10.2-git, 20.10-git, 20-git, git
+Architectures: amd64, arm32v6, arm32v7, arm64v8
+GitCommit: 387e351394bfad74bceebf8303c6c8e39c3d4ed4
+Directory: 20.10/git
 
-Tags: 1.12.4-dind, 1.12-dind, 1-dind, dind
-GitCommit: c1af76ec4c97ff24dcf6675b55b12105216dc711
-Directory: 1.12/dind
+Tags: 19.03.14, 19.03, 19
+Architectures: amd64, arm32v6, arm32v7, arm64v8
+GitCommit: c8b077bfbab07a33ba5c80e5d4987fba8bbdd67b
+Directory: 19.03
 
-Tags: 1.12.4-git, 1.12-git, 1-git, git
-GitCommit: 746d9052066ccfbcb98df7d9ae71cf05d8877419
-Directory: 1.12/git
+Tags: 19.03.14-dind, 19.03-dind, 19-dind
+Architectures: amd64, arm32v6, arm32v7, arm64v8
+GitCommit: b1d2628005e12e79079c025c3653cba248d6f264
+Directory: 19.03/dind
 
-Tags: 1.12.4-experimental, 1.12-experimental, 1-experimental, experimental
-GitCommit: 1c73734649299a17d1472fb206b992a544bd1777
-Directory: 1.12/experimental
+Tags: 19.03.14-dind-rootless, 19.03-dind-rootless, 19-dind-rootless
+Architectures: amd64
+GitCommit: c8b077bfbab07a33ba5c80e5d4987fba8bbdd67b
+Directory: 19.03/dind-rootless
 
-Tags: 1.12.4-experimental-dind, 1.12-experimental-dind, 1-experimental-dind, experimental-dind
-GitCommit: c1af76ec4c97ff24dcf6675b55b12105216dc711
-Directory: 1.12/experimental/dind
-
-Tags: 1.12.4-experimental-git, 1.12-experimental-git, 1-experimental-git, experimental-git
-GitCommit: eb714a73e7e3f87705f468c3c6e9f4e316136bf5
-Directory: 1.12/experimental/git
-
-Tags: 1.11.2, 1.11
-GitCommit: 0c44c1c6c25a34eb9abe320805e0f89bf5b0ace2
-Directory: 1.11
-
-Tags: 1.11.2-dind, 1.11-dind
-GitCommit: 5e30187978ad75d0f2ae5fc6c2a0b668bdf16885
-Directory: 1.11/dind
-
-Tags: 1.11.2-git, 1.11-git
-GitCommit: 866c3fbd87e8eeed524fdf19ba2d63288ad49cd2
-Directory: 1.11/git
+Tags: 19.03.14-git, 19.03-git, 19-git
+Architectures: amd64, arm32v6, arm32v7, arm64v8
+GitCommit: 12d1c2763b54d29137ec448a3e4ad1a9aefae1a0
+Directory: 19.03/git

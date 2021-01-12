@@ -1,5 +1,4 @@
-#!/bin/bash
-set -e
+#!/usr/bin/env bash
 
 globalTests+=(
 	utc
@@ -17,6 +16,9 @@ imageTests[:onbuild]+='
 '
 
 testAlias+=(
+	[amazoncorretto]='openjdk'
+	[adoptopenjdk]='openjdk'
+	[sapmachine]='openjdk'
 	[iojs]='node'
 	[jruby]='ruby'
 	[pypy]='python'
@@ -26,6 +28,7 @@ testAlias+=(
 
 	[mariadb]='mysql'
 	[percona]='mysql'
+	[percona:psmdb]='mongo'
 
 	[hola-mundo]='hello-world'
 	[hello-seattle]='hello-world'
@@ -48,13 +51,20 @@ imageTests+=(
 	[composer]='
 		composer
 	'
+	[convertigo]='
+		convertigo-hello-world
+	'
 	[debian]='
 		debian-apt-get
 	'
 	[docker:dind]='
 		docker-dind
+		docker-registry-push-pull
 	'
 	[django]='
+	'
+	[eclipse-mosquitto]='
+		eclipse-mosquitto-basics
 	'
 	[elasticsearch]='
 		elasticsearch-basics
@@ -73,6 +83,9 @@ imageTests+=(
 		gcc-cpp-hello-world
 		golang-hello-world
 	'
+	[ghost]='
+		ghost-basics
+	'
 	[golang]='
 		golang-hello-world
 	'
@@ -81,28 +94,51 @@ imageTests+=(
 	'
 	[haskell]='
 		haskell-cabal
+		haskell-stack
 		haskell-ghci
 		haskell-runhaskell
+	'
+	[haxe]='
+		haxe-hello-world
+		haxe-haxelib-install
 	'
 	[hylang]='
 		hylang-sh
 		hylang-hello-world
-	'
-	[java]='
 	'
 	[jetty]='
 		jetty-hello-web
 	'
 	[julia]='
 		julia-hello-world
+		julia-downloads
 	'
 	[logstash]='
 		logstash-basics
 	'
 	[memcached]='
+		memcached-basics
 	'
 	[mongo]='
 		mongo-basics
+		mongo-auth-basics
+		mongo-tls-basics
+		mongo-tls-auth
+	'
+	[monica]='
+		monica-cli
+	'
+	[monica:apache]='
+		monica-apache-run
+	'
+	[monica:fpm]='
+		monica-fpm-run
+	'
+	[monica:fpm-alpine]='
+		monica-fpm-run
+	'
+	[mongo-express]='
+		mongo-express-run
 	'
 	[mono]='
 	'
@@ -111,6 +147,17 @@ imageTests+=(
 		mysql-initdb
 		mysql-log-bin
 	'
+	[nextcloud]='
+		nextcloud-cli-mysql
+		nextcloud-cli-postgres
+		nextcloud-cli-sqlite
+	'
+	[nextcloud:apache]='
+		nextcloud-apache-run
+	'
+	[nextcloud:fpm]='
+		nextcloud-fpm-run
+	'
 	[node]='
 		node-hello-world
 	'
@@ -118,7 +165,17 @@ imageTests+=(
 		nuxeo-conf
 		nuxeo-basics
 	'
+	[openjdk]='
+		java-hello-world
+		java-uimanager-font
+		java-ca-certificates
+	'
+	[open-liberty]='
+		open-liberty-hello-world
+	'
 	[percona]='
+		percona-tokudb
+		percona-rocksdb
 	'
 	[perl]='
 		perl-hello-world
@@ -126,6 +183,7 @@ imageTests+=(
 	[php]='
 		php-ext-install
 		php-hello-world
+		php-argon2
 	'
 	[php:apache]='
 		php-apache-hello-web
@@ -136,7 +194,10 @@ imageTests+=(
 	[plone]='
 		plone-basics
 		plone-addons
+		plone-cors
+		plone-versions
 		plone-zeoclient
+		plone-zeosite
 	'
 	[postgres]='
 		postgres-basics
@@ -147,17 +208,31 @@ imageTests+=(
 		python-imports
 		python-pip-requests-ssl
 		python-sqlite3
+		python-stack-size
 	'
 	[rabbitmq]='
+		rabbitmq-basics
+		rabbitmq-tls
 	'
 	[r-base]='
 	'
 	[rails]='
 	'
+	[rapidoid]='
+		rapidoid-hello-world
+		rapidoid-load-balancer
+	'
 	[redis]='
 		redis-basics
+		redis-basics-tls
 		redis-basics-config
 		redis-basics-persistent
+	'
+	[redmine]='
+		redmine-basics
+	'
+	[registry]='
+		docker-registry-push-pull
 	'
 	[rethinkdb]='
 	'
@@ -167,6 +242,22 @@ imageTests+=(
 		ruby-gems
 		ruby-bundler
 		ruby-nonroot
+		ruby-binstubs
+	'
+	[rust]='
+		rust-hello-world
+	'
+	[silverpeas]='
+		silverpeas-basics
+	'
+	[spiped]='
+		spiped-basics
+	'
+	[swipl]='
+		swipl-modules
+	'
+	[swift]='
+		swift-hello-world
 	'
 	[tomcat]='
 		tomcat-hello-world
@@ -177,33 +268,74 @@ imageTests+=(
 	[wordpress:fpm]='
 		wordpress-fpm-run
 	'
-# example onbuild
-#	[python:onbuild]='
-#		py-onbuild
-#	'
+	[znc]='
+		znc-basics
+	'
+	[zookeeper]='
+		zookeeper-basics
+	'
 )
 
 globalExcludeTests+=(
 	# single-binary images
+	[hello-world_no-hard-coded-passwords]=1
 	[hello-world_utc]=1
-	[nats_utc]=1
+	[nats-streaming_no-hard-coded-passwords]=1
 	[nats-streaming_utc]=1
+	[nats_no-hard-coded-passwords]=1
+	[nats_utc]=1
+	[swarm_no-hard-coded-passwords]=1
 	[swarm_utc]=1
+	[traefik_no-hard-coded-passwords]=1
 	[traefik_utc]=1
 
-	[hello-world_no-hard-coded-passwords]=1
-	[nats_no-hard-coded-passwords]=1
-	[nats-streaming_no-hard-coded-passwords]=1
-	[swarm_no-hard-coded-passwords]=1
-	[traefik_no-hard-coded-passwords]=1
-
-	# clearlinux has no /etc/password
+	# clearlinux has no /etc/passwd
 	# https://github.com/docker-library/official-images/pull/1721#issuecomment-234128477
 	[clearlinux_no-hard-coded-passwords]=1
+
+	# alpine/slim/nanoserver openjdk images are headless and so can't do font stuff
+	[openjdk:alpine_java-uimanager-font]=1
+	[openjdk:slim_java-uimanager-font]=1
+	[openjdk:nanoserver_java-uimanager-font]=1
+
+	# the Swift slim images are not expected to be able to run the swift-hello-world test because it involves compiling Swift code. The slim images are for running an already built binary.
+	# https://github.com/docker-library/official-images/pull/6302#issuecomment-512181863
+	[swift:slim_swift-hello-world]=1
+
+	# The new tag kernel-slim provides the bare minimum server image for users to build upon to create their application images.
+	# https://github.com/docker-library/official-images/pull/8993#issuecomment-723328400
+	[open-liberty:slim_open-liberty-hello-world]=1
 
 	# no "native" dependencies
 	[ruby:alpine_ruby-bundler]=1
 	[ruby:alpine_ruby-gems]=1
 	[ruby:slim_ruby-bundler]=1
 	[ruby:slim_ruby-gems]=1
+
+	# MySQL-assuming tests cannot be run on MongoDB-providing images
+	[percona:psmdb_percona-tokudb]=1
+	[percona:psmdb_percona-rocksdb]=1
+
+	# windows!
+	[:nanoserver_cve-2014--shellshock]=1
+	[:nanoserver_no-hard-coded-passwords]=1
+	[:nanoserver_utc]=1
+	[:windowsservercore_cve-2014--shellshock]=1
+	[:windowsservercore_no-hard-coded-passwords]=1
+	[:windowsservercore_utc]=1
+
+	# https://github.com/docker-library/official-images/pull/2578#issuecomment-274889851
+	[nats:nanoserver_override-cmd]=1
+	[nats:windowsservercore_override-cmd]=1
+	[nats-streaming:nanoserver_override-cmd]=1
+	[nats-streaming:windowsservercore_override-cmd]=1
+
+	# https://github.com/docker-library/official-images/pull/8329#issuecomment-656383836
+	[traefik:windowsservercore_override-cmd]=1
+
+	# TODO adjust MongoDB tests to use docker networks instead of links so they can work on Windows (and consider using PowerShell to generate appropriate certificates for TLS tests instead of openssl)
+	[mongo:windowsservercore_mongo-basics]=1
+	[mongo:windowsservercore_mongo-auth-basics]=1
+	[mongo:windowsservercore_mongo-tls-basics]=1
+	[mongo:windowsservercore_mongo-tls-auth]=1
 )

@@ -1,15 +1,25 @@
-# maintainer: Bernd Dorn <bernddorn@gmail.com> (@dobe)
-# maintainer: Mathias Fußenegger <mathias@crate.io> (@mfussenegger)
-# maintainer: Matthias Wahl <matthias@crate.io> (@mfelsche)
-# maintainer: Michael Beer <michael.beer@crate.io> (@mikethebeer)
-# maintainer: Christian Haudum <christian.haudum@crate.io> (@chaudum)
-# maintainer: Ruslan Kovalov <ruslan@crate.io> (@kovrus)
-# maintainer: Claus Matzinger <claus@crate.io> (@celaus)
+Maintainers: Christian Bader <christian.bader@crate.io> (@christianbader),
+             Mathias Fußenegger <mathias@crate.io> (@mfussenegger),
+             Christian Haudum <christian.haudum@crate.io> (@chaudum),
+             Mika Naylor <mika@crate.io> (@autophagy)
+GitRepo: https://github.com/crate/docker-crate.git
 
-# see also https://crate.io
+Tags: 4.3.3, 4.3, latest
+Architectures: amd64, arm64v8
+GitCommit: 3ce73f0d8f20cda26d52204cfc1a86b96f8799ef
 
-latest: git://github.com/crate/docker-crate@51d0d07e455bb6658341cbd7bf8a670c94fdd92c
-0.57: git://github.com/crate/docker-crate@54ceb9d7065ee853faf3b050ddaeeee3580585b8
-0.57.6: git://github.com/crate/docker-crate@54ceb9d7065ee853faf3b050ddaeeee3580585b8
-1.0: git://github.com/crate/docker-crate@51d0d07e455bb6658341cbd7bf8a670c94fdd92c
-1.0.1: git://github.com/crate/docker-crate@51d0d07e455bb6658341cbd7bf8a670c94fdd92c
+Tags: 4.2.7, 4.2
+Architectures: amd64, arm64v8
+GitCommit: 441cd8bb0115a268f30633839bc29d813dfaa0db
+
+Tags: 4.1.8, 4.1
+Architectures: amd64, arm64v8
+GitCommit: fbe46a3c699dfe79242e659626a39b09325d58ab
+
+Tags: 4.0.12, 4.0
+Architectures: amd64, arm64v8
+GitCommit: 7791cda08fbf054ab2ce7a988f8811074b8c3bf4
+
+Tags: 3.3.5, 3.3
+Architectures: amd64, arm64v8
+GitCommit: 896c3f63e8e3d4746019e379a7aefb5225b050e3

@@ -1,21 +1,30 @@
-# this file is generated via https://github.com/docker-library/cassandra/blob/7832a56e4da025d9d87db6cab5c056564995958c/generate-stackbrew-library.sh
+# this file is generated via https://github.com/docker-library/cassandra/blob/c191e1ac6c2fe9973c7ac1f106d395d03ed05eba/generate-stackbrew-library.sh
 
 Maintainers: Tianon Gravi <admwiggin@gmail.com> (@tianon),
              Joseph Ferguson <yosifkit@gmail.com> (@yosifkit)
 GitRepo: https://github.com/docker-library/cassandra.git
 
-Tags: 2.1.16, 2.1
-GitCommit: 4bb926527d4a9eb534508fe0bbae604dee81f40a
-Directory: 2.1
+Tags: 4.0-beta3, 4.0
+Architectures: amd64, arm32v7, arm64v8, ppc64le
+GitCommit: 9cb81d5e734b89af2df9e5636e0c207c5f4609e5
+Directory: 4.0
 
-Tags: 2.2.8, 2.2, 2
-GitCommit: 4bb926527d4a9eb534508fe0bbae604dee81f40a
-Directory: 2.2
+Tags: 3.11.9, 3.11, 3, latest
+Architectures: amd64, arm32v7, arm64v8, ppc64le
+GitCommit: 6fbb6ce475a028c26cd22ac91377887ce453910f
+Directory: 3.11
 
-Tags: 3.0.10, 3.0
-GitCommit: d3a91560b21e73994235a72a4c3153e775e1654d
+Tags: 3.0.23, 3.0
+Architectures: amd64, arm32v7, arm64v8, ppc64le
+GitCommit: 32e0b2dc80fa6d3e67da635b379cdf0620728143
 Directory: 3.0
 
-Tags: 3.9, 3, latest
-GitCommit: 4bb926527d4a9eb534508fe0bbae604dee81f40a
-Directory: 3.9
+Tags: 2.2.19, 2.2, 2
+Architectures: amd64, arm32v7, ppc64le
+GitCommit: cb366dd5fdac8654cd6ecab5b97419664a72cde7
+Directory: 2.2
+
+Tags: 2.1.22, 2.1
+Architectures: amd64, arm64v8, ppc64le
+GitCommit: ac677624ce2dd33c995a55755a2a1dc9918b9a4e
+Directory: 2.1

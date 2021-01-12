@@ -1,8 +1,75 @@
-# this file is generated via https://github.com/docker-library/julia/blob/7cdd4477e389248fd42f9bf6a5d34324be1fbdc4/generate-stackbrew-library.sh
+# this file is generated via https://github.com/docker-library/julia/blob/fff19aebd036897d380cd48ba5be847d04e09ec6/generate-stackbrew-library.sh
 
 Maintainers: Tianon Gravi <admwiggin@gmail.com> (@tianon),
              Joseph Ferguson <yosifkit@gmail.com> (@yosifkit)
 GitRepo: https://github.com/docker-library/julia.git
 
-Tags: 0.5.0, 0.5, 0, latest
-GitCommit: 0f29b23863e4ff1c99b13a30e845b66c7468f79b
+Tags: 1.6.0-beta1-buster, 1.6.0-buster, 1.6-buster, 1.6-rc-buster
+SharedTags: 1.6.0-beta1, 1.6.0, 1.6, 1.6-rc
+Architectures: amd64, arm64v8, i386, ppc64le
+GitCommit: fff19aebd036897d380cd48ba5be847d04e09ec6
+Directory: 1.6-rc/buster
+
+Tags: 1.6.0-beta1-windowsservercore-1809, 1.6.0-windowsservercore-1809, 1.6-windowsservercore-1809, 1.6-rc-windowsservercore-1809
+SharedTags: 1.6.0-beta1, 1.6.0, 1.6, 1.6-rc
+Architectures: windows-amd64
+GitCommit: fff19aebd036897d380cd48ba5be847d04e09ec6
+Directory: 1.6-rc/windows/windowsservercore-1809
+Constraints: windowsservercore-1809
+
+Tags: 1.6.0-beta1-windowsservercore-ltsc2016, 1.6.0-windowsservercore-ltsc2016, 1.6-windowsservercore-ltsc2016, 1.6-rc-windowsservercore-ltsc2016
+SharedTags: 1.6.0-beta1, 1.6.0, 1.6, 1.6-rc
+Architectures: windows-amd64
+GitCommit: fff19aebd036897d380cd48ba5be847d04e09ec6
+Directory: 1.6-rc/windows/windowsservercore-ltsc2016
+Constraints: windowsservercore-ltsc2016
+
+Tags: 1.5.3-buster, 1.5-buster, 1-buster, buster
+SharedTags: 1.5.3, 1.5, 1, latest
+Architectures: amd64, arm64v8, i386
+GitCommit: 1a43a633f80d76bd6bf20b88797b18971b87de4e
+Directory: 1.5/buster
+
+Tags: 1.5.3-alpine3.12, 1.5-alpine3.12, 1-alpine3.12, alpine3.12, 1.5.3-alpine, 1.5-alpine, 1-alpine, alpine
+Architectures: amd64
+GitCommit: 221740e8163a4bdb858065b5cca1ae774ea3a73a
+Directory: 1.5/alpine3.12
+
+Tags: 1.5.3-windowsservercore-1809, 1.5-windowsservercore-1809, 1-windowsservercore-1809, windowsservercore-1809
+SharedTags: 1.5.3, 1.5, 1, latest
+Architectures: windows-amd64
+GitCommit: 221740e8163a4bdb858065b5cca1ae774ea3a73a
+Directory: 1.5/windows/windowsservercore-1809
+Constraints: windowsservercore-1809
+
+Tags: 1.5.3-windowsservercore-ltsc2016, 1.5-windowsservercore-ltsc2016, 1-windowsservercore-ltsc2016, windowsservercore-ltsc2016
+SharedTags: 1.5.3, 1.5, 1, latest
+Architectures: windows-amd64
+GitCommit: 221740e8163a4bdb858065b5cca1ae774ea3a73a
+Directory: 1.5/windows/windowsservercore-ltsc2016
+Constraints: windowsservercore-ltsc2016
+
+Tags: 1.0.5-buster, 1.0-buster
+SharedTags: 1.0.5, 1.0
+Architectures: amd64, arm32v7, arm64v8, i386
+GitCommit: 4c770401df0b946da5cf61150bedb05280b218a6
+Directory: 1.0/buster
+
+Tags: 1.0.5-stretch, 1.0-stretch
+Architectures: amd64, arm32v7, arm64v8, i386
+GitCommit: 4c770401df0b946da5cf61150bedb05280b218a6
+Directory: 1.0/stretch
+
+Tags: 1.0.5-windowsservercore-1809, 1.0-windowsservercore-1809
+SharedTags: 1.0.5, 1.0
+Architectures: windows-amd64
+GitCommit: fc3c116c6fe19f870091df6843ed63a37f6c291b
+Directory: 1.0/windows/windowsservercore-1809
+Constraints: windowsservercore-1809
+
+Tags: 1.0.5-windowsservercore-ltsc2016, 1.0-windowsservercore-ltsc2016
+SharedTags: 1.0.5, 1.0
+Architectures: windows-amd64
+GitCommit: fc3c116c6fe19f870091df6843ed63a37f6c291b
+Directory: 1.0/windows/windowsservercore-ltsc2016
+Constraints: windowsservercore-ltsc2016

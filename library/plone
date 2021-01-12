@@ -3,10 +3,22 @@ Maintainers: Alin Voinea <alin.voinea@gmail.com> (@avoinea),
              Antonio De Marinis <Antonio.DeMarinis@eea.europa.eu> (@demarant)
 GitRepo: https://github.com/plone/plone.docker.git
 
-Tags: 5.0.6, 5.0, 5, latest
-GitCommit: 72ef7b021f167329d055ea9744b6b85e21496624
-Directory: 5.0/5.0.6/debian
+Tags: 5.2.2-python38, 5.2-python38, 5-python38, python38, 5.2.2, 5.2, 5, latest
+Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
+GitCommit: f66610b264ad294acc2bb85676e53e803994a5e7
+Directory: 5.2/5.2.2/debian
 
-Tags: 4.3.11, 4.3, 4
-GitCommit: 72ef7b021f167329d055ea9744b6b85e21496624
-Directory: 4.3/4.3.11/debian
+Tags: 5.2.2-python37, 5.2-python37, 5-python37, python37
+Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
+GitCommit: f66610b264ad294acc2bb85676e53e803994a5e7
+Directory: 5.2/5.2.2/python37
+
+Tags: 5.2.2-python36, 5.2-python36, 5-python36, python36
+Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
+GitCommit: f66610b264ad294acc2bb85676e53e803994a5e7
+Directory: 5.2/5.2.2/python36
+
+Tags: 5.2.2-alpine, 5.2-alpine, 5-alpine, alpine
+Architectures: amd64, arm32v6, arm64v8, i386, ppc64le, s390x
+GitCommit: f66610b264ad294acc2bb85676e53e803994a5e7
+Directory: 5.2/5.2.2/alpine

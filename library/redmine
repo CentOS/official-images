@@ -1,29 +1,31 @@
-# this file is generated via https://github.com/docker-library/redmine/blob/c070428e8c4c43b2d0608a1e77ae44f78220967e/generate-stackbrew-library.sh
+# this file is generated via https://github.com/docker-library/redmine/blob/5c14293651c7d35cfcfe3947466ebf7fe166f89e/generate-stackbrew-library.sh
 
 Maintainers: Tianon Gravi <admwiggin@gmail.com> (@tianon),
              Joseph Ferguson <yosifkit@gmail.com> (@yosifkit)
 GitRepo: https://github.com/docker-library/redmine.git
 
-Tags: 3.1.7, 3.1
-GitCommit: e75fd00870dcd47a848532abf999f7ec13bb0262
-Directory: 3.1
+Tags: 4.1.1, 4.1, 4, latest
+Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, mips64le, ppc64le, s390x
+GitCommit: f5895d1d4bff53a590b6048e294dc96b26206883
+Directory: 4.1
 
-Tags: 3.1.7-passenger, 3.1-passenger
-GitCommit: 31ec3c8963424bbc1730806a65d9914c84df17de
-Directory: 3.1/passenger
+Tags: 4.1.1-passenger, 4.1-passenger, 4-passenger, passenger
+GitCommit: 7fdd6777cc21b0d1974884e6e54208d16a991b19
+Directory: 4.1/passenger
 
-Tags: 3.2.4, 3.2
-GitCommit: e75fd00870dcd47a848532abf999f7ec13bb0262
-Directory: 3.2
+Tags: 4.1.1-alpine, 4.1-alpine, 4-alpine, alpine
+GitCommit: 1dae7ff59aef57ec379bbada0fa01a193fadb847
+Directory: 4.1/alpine
 
-Tags: 3.2.4-passenger, 3.2-passenger
-GitCommit: 31ec3c8963424bbc1730806a65d9914c84df17de
-Directory: 3.2/passenger
+Tags: 4.0.7, 4.0
+Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, mips64le, ppc64le, s390x
+GitCommit: f5895d1d4bff53a590b6048e294dc96b26206883
+Directory: 4.0
 
-Tags: 3.3.1, 3.3, 3, latest
-GitCommit: e75fd00870dcd47a848532abf999f7ec13bb0262
-Directory: 3.3
+Tags: 4.0.7-passenger, 4.0-passenger
+GitCommit: 7fdd6777cc21b0d1974884e6e54208d16a991b19
+Directory: 4.0/passenger
 
-Tags: 3.3.1-passenger, 3.3-passenger, 3-passenger, passenger
-GitCommit: 31ec3c8963424bbc1730806a65d9914c84df17de
-Directory: 3.3/passenger
+Tags: 4.0.7-alpine, 4.0-alpine
+GitCommit: 1dae7ff59aef57ec379bbada0fa01a193fadb847
+Directory: 4.0/alpine

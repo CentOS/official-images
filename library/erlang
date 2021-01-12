@@ -1,36 +1,84 @@
-# this file is generated via https://github.com/c0b/docker-erlang-otp/blob/65d3a1ff75dfe46467b2fc93a0fd6f5009ba02f4/generate-stackbrew-library.sh
+# this file is generated via https://github.com/erlang/docker-erlang-otp/blob/c0f9d0d3cb0e86581269ec68b12a0ccf5c30276e/generate-stackbrew-library.sh
 
 Maintainers: Mr C0B <denc716@gmail.com> (@c0b)
-GitRepo: https://github.com/c0b/docker-erlang-otp.git
+GitRepo: https://github.com/erlang/docker-erlang-otp.git
 
-Tags: 19.1.6, 19.1, 19, latest
-GitCommit: 02c1f6eaae350492bf74a9a261b9639b17ae524e
+Tags: 23.2.1.0, 23.2.1, 23.2, 23, latest
+Architectures: amd64, arm32v7, arm64v8, i386, s390x, ppc64le
+GitCommit: 2a421bba850ad07169575f116bb434ac22e15084
+Directory: 23
+
+Tags: 23.2.1.0-slim, 23.2.1-slim, 23.2-slim, 23-slim, slim
+Architectures: amd64, arm32v7, arm64v8, i386, s390x, ppc64le
+GitCommit: 2a421bba850ad07169575f116bb434ac22e15084
+Directory: 23/slim
+
+Tags: 23.2.1.0-alpine, 23.2.1-alpine, 23.2-alpine, 23-alpine, alpine
+Architectures: amd64, arm32v7, arm64v8, i386, s390x, ppc64le
+GitCommit: 2a421bba850ad07169575f116bb434ac22e15084
+Directory: 23/alpine
+
+Tags: 22.3.4.13, 22.3.4, 22.3, 22
+Architectures: amd64, arm32v7, arm64v8, i386, s390x, ppc64le
+GitCommit: eb09140e0e739a00d5faaf97fb41dcff3bfdf6ed
+Directory: 22
+
+Tags: 22.3.4.13-slim, 22.3.4-slim, 22.3-slim, 22-slim
+Architectures: amd64, arm32v7, arm64v8, i386, s390x, ppc64le
+GitCommit: eb09140e0e739a00d5faaf97fb41dcff3bfdf6ed
+Directory: 22/slim
+
+Tags: 22.3.4.13-alpine, 22.3.4-alpine, 22.3-alpine, 22-alpine
+Architectures: amd64, arm32v7, arm64v8, i386, s390x, ppc64le
+GitCommit: eb09140e0e739a00d5faaf97fb41dcff3bfdf6ed
+Directory: 22/alpine
+
+Tags: 21.3.8.18, 21.3.8, 21.3, 21
+Architectures: amd64, arm32v7, arm64v8, i386
+GitCommit: d885c8ac3faa78a4117ae6bfd5df062c89f969d9
+Directory: 21
+
+Tags: 21.3.8.18-slim, 21.3.8-slim, 21.3-slim, 21-slim
+Architectures: amd64, arm32v7, arm64v8, i386
+GitCommit: a2dd4a21f86beae8c9f118b6c8572c6b68171ab5
+Directory: 21/slim
+
+Tags: 21.3.8.18-alpine, 21.3.8-alpine, 21.3-alpine, 21-alpine
+Architectures: amd64, arm32v7, arm64v8, i386
+GitCommit: bee9618b7a72e17d7eced7e22b2586d7820ec9e9
+Directory: 21/alpine
+
+Tags: 20.3.8.26, 20.3.8, 20.3, 20
+Architectures: amd64, arm32v7, arm64v8, i386
+GitCommit: d885c8ac3faa78a4117ae6bfd5df062c89f969d9
+Directory: 20
+
+Tags: 20.3.8.26-slim, 20.3.8-slim, 20.3-slim, 20-slim
+Architectures: amd64, arm32v7, arm64v8, i386
+GitCommit: b06bf8de34e693b3698f3a22e8ff864dc320b380
+Directory: 20/slim
+
+Tags: 20.3.8.26-alpine, 20.3.8-alpine, 20.3-alpine, 20-alpine
+Architectures: amd64, arm32v7, arm64v8, i386
+GitCommit: bee9618b7a72e17d7eced7e22b2586d7820ec9e9
+Directory: 20/alpine
+
+Tags: 19.3.6.13, 19.3.6, 19.3, 19
+Architectures: amd64, arm32v7, arm64v8, i386
+GitCommit: d885c8ac3faa78a4117ae6bfd5df062c89f969d9
 Directory: 19
 
-Tags: 19.1.6-slim, 19.1-slim, 19-slim, slim
-GitCommit: 02c1f6eaae350492bf74a9a261b9639b17ae524e
+Tags: 19.3.6.13-slim, 19.3.6-slim, 19.3-slim, 19-slim
+Architectures: amd64, arm32v7, arm64v8, i386
+GitCommit: e91894d9d9c3651382834b77978a05fa057338fb
 Directory: 19/slim
 
-Tags: 19.1.6-onbuild, 19.1-onbuild, 19-onbuild, onbuild
-GitCommit: 02c1f6eaae350492bf74a9a261b9639b17ae524e
-Directory: 19/onbuild
-
-Tags: 18.3.4.4, 18.3.4, 18.3, 18
-GitCommit: 7f5e7b4768136caa5f15e0b84d6b503fa430ef7b
+Tags: 18.3.4.11, 18.3.4, 18.3, 18
+Architectures: amd64, arm32v7, arm64v8, i386
+GitCommit: e91894d9d9c3651382834b77978a05fa057338fb
 Directory: 18
 
-Tags: 18.3.4.4-slim, 18.3.4-slim, 18.3-slim, 18-slim
-GitCommit: 7f5e7b4768136caa5f15e0b84d6b503fa430ef7b
+Tags: 18.3.4.11-slim, 18.3.4-slim, 18.3-slim, 18-slim
+Architectures: amd64, arm32v7, arm64v8, i386
+GitCommit: e91894d9d9c3651382834b77978a05fa057338fb
 Directory: 18/slim
-
-Tags: 18.3.4.4-onbuild, 18.3.4-onbuild, 18.3-onbuild, 18-onbuild
-GitCommit: 20e41464075dc0fc76709be77701530eddb6fe33
-Directory: 18/onbuild
-
-Tags: 17.5.6.9, 17.5.6, 17.5, 17
-GitCommit: ea32d5f6f1735f9f55bee04b112166da96eb9c73
-Directory: 17
-
-Tags: 17.5.6.9-slim, 17.5.6-slim, 17.5-slim, 17-slim
-GitCommit: ea32d5f6f1735f9f55bee04b112166da96eb9c73
-Directory: 17/slim

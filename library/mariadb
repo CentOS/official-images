@@ -1,17 +1,30 @@
-# this file is generated via https://github.com/docker-library/mariadb/blob/a09ad0056e1b95de7d448187770f6264d9e25fe2/generate-stackbrew-library.sh
+# this file is generated via https://github.com/docker-library/mariadb/blob/c969655b3c92a1ae3f066e506ab7b32ff4ba4582/generate-stackbrew-library.sh
 
 Maintainers: Tianon Gravi <admwiggin@gmail.com> (@tianon),
              Joseph Ferguson <yosifkit@gmail.com> (@yosifkit)
 GitRepo: https://github.com/docker-library/mariadb.git
 
-Tags: 10.1.19, 10.1, 10, latest
-GitCommit: 2b065acb53b18eb44e1d78a1a41f0a46f829c291
+Tags: 10.5.8-focal, 10.5-focal, 10-focal, focal, 10.5.8, 10.5, 10, latest
+Architectures: amd64, arm64v8, ppc64le
+GitCommit: 58bef417cbeea4eb6b15c46b6097c3cbb99beb32
+Directory: 10.5
+
+Tags: 10.4.17-focal, 10.4-focal, 10.4.17, 10.4
+Architectures: amd64, arm64v8, ppc64le
+GitCommit: 8ef8085a9b9a24c440292d7e854fb2158f967210
+Directory: 10.4
+
+Tags: 10.3.27-focal, 10.3-focal, 10.3.27, 10.3
+Architectures: amd64, arm64v8, ppc64le
+GitCommit: 36c34c3de9f4018d5153b531d754c5ae6805f723
+Directory: 10.3
+
+Tags: 10.2.36-bionic, 10.2-bionic, 10.2.36, 10.2
+Architectures: amd64, arm64v8, ppc64le
+GitCommit: a6f3e998fbe25b027bbc168f8c8948be461aa127
+Directory: 10.2
+
+Tags: 10.1.48-bionic, 10.1-bionic, 10.1.48, 10.1
+Architectures: amd64, arm64v8, ppc64le
+GitCommit: 1c8ad664ca320bebc8fa105cb3ec9ad385f0bae3
 Directory: 10.1
-
-Tags: 10.0.28, 10.0
-GitCommit: 2b065acb53b18eb44e1d78a1a41f0a46f829c291
-Directory: 10.0
-
-Tags: 5.5.53, 5.5, 5
-GitCommit: 2b065acb53b18eb44e1d78a1a41f0a46f829c291
-Directory: 5.5

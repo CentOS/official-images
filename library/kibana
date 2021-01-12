@@ -1,17 +1,13 @@
-# this file is generated via https://github.com/docker-library/kibana/blob/03f657e02f2fc3f3487dfe98cc98f9870eaaa5c4/generate-stackbrew-library.sh
+# this file is generated via https://github.com/docker-library/kibana/blob/2ec5f3641bcc93b9a8066f19b42630b4e8d570c7/generate-stackbrew-library.sh
 
 Maintainers: Tianon Gravi <admwiggin@gmail.com> (@tianon),
              Joseph Ferguson <yosifkit@gmail.com> (@yosifkit)
 GitRepo: https://github.com/docker-library/kibana.git
 
-Tags: 5.1.1, 5.1, 5, latest
-GitCommit: 03f657e02f2fc3f3487dfe98cc98f9870eaaa5c4
-Directory: 5
+Tags: 7.10.1
+GitCommit: 87f688d33b13dfb010749eae424f273e7a10ec95
+Directory: 7
 
-Tags: 4.6.3, 4.6, 4
-GitCommit: 43644e6ae40c53c05d94165506094035f0463ea6
-Directory: 4.6
-
-Tags: 4.1.11, 4.1
-GitCommit: 7ce21f8aa1e58443c3031fdbdf83a08ce34e49a4
-Directory: 4.1
+Tags: 6.8.13
+GitCommit: fc4b5ff0a085e951ea59036fc358f669fd3c437a
+Directory: 6

@@ -1,6 +1,33 @@
-# maintainer: Lightstreamer Server Development Team <support@lightreamer.com> (@lightstreamer)
+Maintainers: Lightstreamer Server Development Team <support@lightreamer.com> (@lightstreamer)
+GitRepo: https://github.com/Lightstreamer/Docker.git
 
-6.0.3: git://github.com/Lightstreamer/Docker@784b417d4415e12f1bb1b15f7f697273de3a7ded 6.0
-6.0: git://github.com/Lightstreamer/Docker@784b417d4415e12f1bb1b15f7f697273de3a7ded 6.0
-6: git://github.com/Lightstreamer/Docker@784b417d4415e12f1bb1b15f7f697273de3a7ded 6.0
-latest: git://github.com/Lightstreamer/Docker@784b417d4415e12f1bb1b15f7f697273de3a7ded 6.0
+Tags: 6.0.3, 6.0
+Architectures: amd64
+GitCommit: eeab1ae534273b1b05c973e577a1f3eec8d58427
+Directory: 6.0
+
+Tags: 6.1.0, 6.1, 6
+Architectures: amd64
+GitCommit: eeab1ae534273b1b05c973e577a1f3eec8d58427
+Directory: 6.1
+
+Tags: 7.0.3-jdk8-openjdk, 7.0-jdk8-openjdk, 7.0.3-jdk8, 7.0-jdk8
+Architectures: amd64
+GitCommit: f3aaece15133b9405aef20c5d378c5a83aba7585
+Directory: 7.0/jdk8
+
+Tags: 7.0.3-jdk11-openjdk, 7.0-jdk11-openjdk, 7.0.3-jdk11, 7.0-jdk11, 7.0.3, 7.0
+Architectures: amd64, arm64v8
+GitCommit: f3aaece15133b9405aef20c5d378c5a83aba7585
+Directory: 7.0/jdk11
+
+Tags: 7.1.2-jdk8-openjdk, 7.1-jdk8-openjdk, 7-jdk8-openjdk, 7.1.2-jdk8, 7.1-jdk8, 7-jdk8
+Architectures: amd64
+GitCommit: 7bdd2632e1cae0bf838899d591aadb2dd128c41a
+Directory: 7.1/jdk8
+
+Tags: 7.1.2-jdk11-openjdk, 7.1-jdk11-openjdk, 7-jdk11-openjdk, 7.1.2-jdk11, 7.1-jdk11, 7-jdk11, 7.1.2, 7.1, 7, latest
+Architectures: amd64, arm64v8
+GitCommit: 7bdd2632e1cae0bf838899d591aadb2dd128c41a
+Directory: 7.1/jdk11
+

@@ -1,19 +1,34 @@
-# maintainer: Oracle Linux Product Team <ol-ovm-info_ww@oracle.com> (@Djelibeybi)
+Maintainers: Oracle Linux Product Team <ol-ovm-info_ww@oracle.com> (@Oracle)
+GitRepo: https://github.com/oracle/container-images.git
+GitCommit: 01a15ec99c7470a3391c691509db1759b41eaf66
+GitFetch: refs/heads/master
+# https://github.com/oracle/container-images/tree/dist-amd64
+amd64-GitFetch: refs/heads/dist-amd64
+amd64-GitCommit: 771e29f60d613a998545d5f2404e2f189f2722c5
+# https://github.com/oracle/container-images/tree/dist-arm64v8
+arm64v8-GitFetch: refs/heads/dist-arm64v8
+arm64v8-GitCommit: b3619605fbd80be098075a973ba93452d0197361
 
-# Oracle Linux 7
-latest: git://github.com/oracle/docker-images.git@f84cba841527a9371d92c854c3b8c73125a76173 OracleLinux/7.3
-7: git://github.com/oracle/docker-images.git@f84cba841527a9371d92c854c3b8c73125a76173 OracleLinux/7.3
-7.3: git://github.com/oracle/docker-images.git@f84cba841527a9371d92c854c3b8c73125a76173 OracleLinux/7.3
-7.2: git://github.com/oracle/docker-images.git@f84cba841527a9371d92c854c3b8c73125a76173 OracleLinux/7.2
-7.1: git://github.com/oracle/docker-images.git@f84cba841527a9371d92c854c3b8c73125a76173 OracleLinux/7.1
-7.0: git://github.com/oracle/docker-images.git@f84cba841527a9371d92c854c3b8c73125a76173 OracleLinux/7.0
+Tags: 8.3, 8
+Architectures: amd64, arm64v8
+Directory: 8
 
-# Oracle Linux 6
-6: git://github.com/oracle/docker-images.git@f84cba841527a9371d92c854c3b8c73125a76173 OracleLinux/6.8
-6.8: git://github.com/oracle/docker-images.git@f84cba841527a9371d92c854c3b8c73125a76173 OracleLinux/6.8
-6.7: git://github.com/oracle/docker-images.git@f84cba841527a9371d92c854c3b8c73125a76173 OracleLinux/6.7
-6.6: git://github.com/oracle/docker-images.git@f84cba841527a9371d92c854c3b8c73125a76173 OracleLinux/6.6
+Tags: 8-slim
+Architectures: amd64, arm64v8
+Directory: 8-slim
 
-# Oracle Linux 5
-5: git://github.com/oracle/docker-images.git@f84cba841527a9371d92c854c3b8c73125a76173 OracleLinux/5.11
-5.11: git://github.com/oracle/docker-images.git@f84cba841527a9371d92c854c3b8c73125a76173 OracleLinux/5.11
+Tags: 7.9, 7
+Architectures: amd64, arm64v8
+Directory: 7
+
+Tags: 7-slim
+Architectures: amd64, arm64v8
+Directory: 7-slim
+
+Tags: 6.10, 6
+Architectures: amd64
+Directory: 6
+
+Tags: 6-slim
+Architectures: amd64
+Directory: 6-slim

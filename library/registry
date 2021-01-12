@@ -1,11 +1,11 @@
-# maintainer: Stephen Day <stephen.day@docker.com> (@stevvooe)
-# maintainer: Olivier Gambier <olivier.gambier@docker.com> (@dmp42)
-# maintainer: Richard Scothern <richard.scothern@gmail.com> (@RichardScothern)
-# maintainer: Aaron Lehmann <aaron.lehmann@docker.com> (@aaronlehmann)
+Maintainers: David Wu (@davidswu),
+             Ryan Abrams (@caervs)
+GitRepo: https://github.com/docker/distribution-library-image.git
 
-2: git://github.com/docker/distribution-library-image@3b4a84c1f152b60688e99d2efadf305479541482
-2.5: git://github.com/docker/distribution-library-image@3b4a84c1f152b60688e99d2efadf305479541482
-2.5.1: git://github.com/docker/distribution-library-image@3b4a84c1f152b60688e99d2efadf305479541482
-2.6.0-rc.1: git://github.com/docker/distribution-library-image@badae459fc79845d0ca889e9002261a35738de87
-latest: git://github.com/docker/distribution-library-image@3b4a84c1f152b60688e99d2efadf305479541482
-
+Tags: 2.7.1, 2.7, 2, latest
+Architectures: amd64, arm64v8, arm32v6
+GitFetch: refs/heads/release/2.7
+GitCommit: ab00e8dae12d4515ed259015eab771ec92e92dd4
+amd64-Directory: amd64
+arm32v6-Directory: arm
+arm64v8-Directory: arm64

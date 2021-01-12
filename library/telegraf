@@ -1,21 +1,25 @@
-Maintainers: Jonathan A. Sternberg <jonathan@influxdb.com> (@jsternberg)
-
-Tags: 1.0, 1.0.1
+Maintainers: David Reimschussel <dreimschussel@influxdata.com> (@reimda),
+             Steven Soroka <ssoroka@influxdata.com> (@ssoroka)
 GitRepo: git://github.com/influxdata/influxdata-docker
-GitCommit: a86d1ecbaa12a696c10ed66bf4390c42fe733582
-Directory: telegraf/1.0
+GitCommit: 636da53f332fd930ea15b2d4d54614571cbeff2d
 
-Tags: 1.0-alpine, 1.0.1-alpine
-GitRepo: git://github.com/influxdata/influxdata-docker
-GitCommit: a86d1ecbaa12a696c10ed66bf4390c42fe733582
-Directory: telegraf/1.0/alpine
+Tags: 1.15, 1.15.4
+Architectures: amd64, arm32v7, arm64v8
+Directory: telegraf/1.15
 
-Tags: 1.1, 1.1.2, latest
-GitRepo: git://github.com/influxdata/influxdata-docker
-GitCommit: 9bfe5c39d1fcf1dfdaa1732cb98311a40fbf6a57
-Directory: telegraf/1.1
+Tags: 1.15-alpine, 1.15.4-alpine
+Directory: telegraf/1.15/alpine
 
-Tags: 1.1-alpine, 1.1.2-alpine, alpine
-GitRepo: git://github.com/influxdata/influxdata-docker
-GitCommit: 9bfe5c39d1fcf1dfdaa1732cb98311a40fbf6a57
-Directory: telegraf/1.1/alpine
+Tags: 1.16, 1.16.3
+Architectures: amd64, arm32v7, arm64v8
+Directory: telegraf/1.16
+
+Tags: 1.16-alpine, 1.16.3-alpine
+Directory: telegraf/1.16/alpine
+
+Tags: 1.17, 1.17.0, latest
+Architectures: amd64, arm32v7, arm64v8
+Directory: telegraf/1.17
+
+Tags: 1.17-alpine, 1.17.0-alpine, alpine
+Directory: telegraf/1.17/alpine

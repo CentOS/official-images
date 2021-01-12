@@ -1,7 +1,23 @@
-# maintainer: Jérémy Jacquier-Roux <jeremy.jacquier-roux@bonitasoft.org> (@JeremJR)
-# maintainer: Guillaume Rosinosky <guillaume.rosinosky@bonitasoft.org> (@guillaumerosinosky)
-# maintainer: Truc Nguyen <truc.nguyen@bonitasoft.org> (@tnguyen1)
+Maintainers: Baptiste Mesta <baptiste.mesta@bonitasoft.org> (@baptistemesta),
+             Danila Mazour <danila.mazour@bonitasoft.org> (@danila-m),
+             Emmanuel Duchastenier <emmanuel.duchastenier@bonitasoft.org> (@educhastenier),
+             Pascal Garcia <pascal.garcia@bonitasoft.org> (@passga),
+             Anthony Birembaut <anthony.birembaut@bonitasoft.org> (@abirembaut),
+             Dumitru Corini <dumitru.corini@bonitasoft.org> (@DumitruCorini)
+Architectures: amd64, arm64v8, ppc64le
 
-7.2.4: git://github.com/Bonitasoft-Community/docker_bonita@c8d6cbb007b77a9ce5b22a7e874608962f863e99 7.2
-7.3.3: git://github.com/Bonitasoft-Community/docker_bonita@19d78ec0f212891e97814b2db30891b9b280f7e5 7.3
-latest: git://github.com/Bonitasoft-Community/docker_bonita@19d78ec0f212891e97814b2db30891b9b280f7e5 7.3
+Tags: 7.9.5, 7.9
+GitRepo: https://github.com/Bonitasoft-Community/docker_bonita.git
+GitCommit: b58b05d989055ca3521fc92211d10ff640b4028f
+Directory: 7.9
+
+Tags: 7.10.6, 7.10
+GitRepo: https://github.com/Bonitasoft-Community/docker_bonita.git
+GitCommit: e6f9f1a5e57c35bbd833c9441a639f326dffb7d5
+Directory: 7.10
+
+Tags: 7.11.4, 7.11, latest
+GitRepo: https://github.com/bonitasoft/bonita-distrib.git
+GitCommit: 231024c8290a9aa31a45b758a0765a684c21ed21
+Directory: docker
+

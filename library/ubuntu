@@ -1,41 +1,54 @@
-# Maintained by Tianon as proxy for upstream's offical builds.
-
-Maintainers: Tianon Gravi <tianon@debian.org> (@tianon)
-GitRepo: https://github.com/tianon/docker-brew-ubuntu-core.git
-GitFetch: refs/heads/dist
-
 # see https://partner-images.canonical.com/core/
 # see also https://wiki.ubuntu.com/Releases#Current
 
-# commits: (master..dist)
-#  - cf9d7a2 Update tarballs
-#    - `ubuntu:precise`: 20161123
-#    - `ubuntu:trusty`: 20161123
-#    - `ubuntu:xenial`: 20161121
-#    - `ubuntu:yakkety`: 20161121
-#    - `ubuntu:zesty`: 20161129.1
+Maintainers: Tianon Gravi <tianon@debian.org> (@tianon), Michael Hudson-Doyle <michael.hudson@ubuntu.com> (@mwhudson)
+GitRepo: https://github.com/tianon/docker-brew-ubuntu-core.git
+GitCommit: 307c20ce58171e7e30925ddc2588f7f7bff6e167
+# https://github.com/tianon/docker-brew-ubuntu-core/tree/dist-amd64
+amd64-GitFetch: refs/heads/dist-amd64
+amd64-GitCommit: 74249faf47098bef2cedad89696bfd1ed521e019
+# https://github.com/tianon/docker-brew-ubuntu-core/tree/dist-arm32v7
+arm32v7-GitFetch: refs/heads/dist-arm32v7
+arm32v7-GitCommit: 6a5631feaa8e67d04a6d794cd106735571901cdb
+# https://github.com/tianon/docker-brew-ubuntu-core/tree/dist-arm64v8
+arm64v8-GitFetch: refs/heads/dist-arm64v8
+arm64v8-GitCommit: 16d9b6f133b40c915fdc53ca9f76ac27d33b8643
+# https://github.com/tianon/docker-brew-ubuntu-core/tree/dist-i386
+i386-GitFetch: refs/heads/dist-i386
+i386-GitCommit: c0a5dcc5bf862a2515cc2ecc0cf4edfdd180b83c
+# https://github.com/tianon/docker-brew-ubuntu-core/tree/dist-ppc64le
+ppc64le-GitFetch: refs/heads/dist-ppc64le
+ppc64le-GitCommit: 7d30b8f9533879e1cd5bc4811b8677ac5cdf7d08
+# https://github.com/tianon/docker-brew-ubuntu-core/tree/dist-s390x
+s390x-GitFetch: refs/heads/dist-s390x
+s390x-GitCommit: d1497d463aa91f538c6a0bb3e7b9dac6ab34e650
 
-# 20161123
-Tags: 12.04.5, 12.04, precise-20161123, precise
-GitCommit: cf9d7a2ee20c8a4706a05d1d7f1a1e25ae32ed39
-Directory: precise
+# 20201119 (bionic)
+Tags: 18.04, bionic-20201119, bionic
+Architectures: amd64, arm32v7, arm64v8, i386, ppc64le, s390x
+Directory: bionic
 
-# 20161123
-Tags: 14.04.5, 14.04, trusty-20161123, trusty
-GitCommit: cf9d7a2ee20c8a4706a05d1d7f1a1e25ae32ed39
+# 20201106 (focal)
+Tags: 20.04, focal-20201106, focal, latest
+Architectures: amd64, arm32v7, arm64v8, ppc64le, s390x
+Directory: focal
+
+# 20201125.2 (groovy)
+Tags: 20.10, groovy-20201125.2, groovy, rolling
+Architectures: amd64, arm32v7, arm64v8, ppc64le, s390x
+Directory: groovy
+
+# 20201119 (hirsute)
+Tags: 21.04, hirsute-20201119, hirsute, devel
+Architectures: amd64, arm32v7, arm64v8, ppc64le, s390x
+Directory: hirsute
+
+# 20191217 (trusty)
+Tags: 14.04, trusty-20191217, trusty
+Architectures: amd64, arm32v7, arm64v8, i386, ppc64le
 Directory: trusty
 
-# 20161121
-Tags: 16.04, xenial-20161121, xenial, latest
-GitCommit: cf9d7a2ee20c8a4706a05d1d7f1a1e25ae32ed39
+# 20201030 (xenial)
+Tags: 16.04, xenial-20201030, xenial
+Architectures: amd64, arm32v7, arm64v8, i386, ppc64le, s390x
 Directory: xenial
-
-# 20161121
-Tags: 16.10, yakkety-20161121, yakkety
-GitCommit: cf9d7a2ee20c8a4706a05d1d7f1a1e25ae32ed39
-Directory: yakkety
-
-# 20161129.1
-Tags: 17.04, zesty-20161129.1, zesty, devel
-GitCommit: cf9d7a2ee20c8a4706a05d1d7f1a1e25ae32ed39
-Directory: zesty

@@ -1,16 +1,18 @@
-# maintainer: Daniel Alan Miller <dalanmiller@rethinkdb.com> (@dalanmiller)
+Maintainers: RethinkDB <services@rethinkdb.com> (@gabor-boros)
+GitRepo: https://github.com/rethinkdb/rethinkdb-dockerfiles.git
 
-2.0.4: git://github.com/rethinkdb/rethinkdb-dockerfiles@da98484fc73485fe7780546903d01dcbcd931673 jessie/2.0.4
-2.0: git://github.com/rethinkdb/rethinkdb-dockerfiles@da98484fc73485fe7780546903d01dcbcd931673 jessie/2.0.4
+Tags: 2.4.1-buster-slim, 2.4-buster-slim, 2-buster-slim, buster-slim, 2.4.1, 2.4, 2, latest
+Directory: buster/2.4.1
+GitCommit: 5bccd499742f6f05e7ddc970842a1763bdd99cfa
 
-2.1.6: git://github.com/rethinkdb/rethinkdb-dockerfiles@da98484fc73485fe7780546903d01dcbcd931673 jessie/2.1.6
-2.1: git://github.com/rethinkdb/rethinkdb-dockerfiles@da98484fc73485fe7780546903d01dcbcd931673 jessie/2.1.6
+Tags: 2.4.1-centos, 2.4-centos, 2-centos, centos
+Directory: centos8/2.4.1
+GitCommit: 5bccd499742f6f05e7ddc970842a1763bdd99cfa
 
-2.2.6: git://github.com/rethinkdb/rethinkdb-dockerfiles@da98484fc73485fe7780546903d01dcbcd931673 jessie/2.2.6
-2.2: git://github.com/rethinkdb/rethinkdb-dockerfiles@da98484fc73485fe7780546903d01dcbcd931673 jessie/2.2.6
+Tags: 2.4.0-buster-slim, 2.4.0
+Directory: buster/2.4.0
+GitCommit: 444f7754822cb3e96cb2b66042d8e87d2227be0b
 
-2.3.4: git://github.com/rethinkdb/rethinkdb-dockerfiles@da98484fc73485fe7780546903d01dcbcd931673 jessie/2.3.4
-2.3.5: git://github.com/rethinkdb/rethinkdb-dockerfiles@da98484fc73485fe7780546903d01dcbcd931673 jessie/2.3.5
-2.3: git://github.com/rethinkdb/rethinkdb-dockerfiles@da98484fc73485fe7780546903d01dcbcd931673 jessie/2.3.5
-2: git://github.com/rethinkdb/rethinkdb-dockerfiles@da98484fc73485fe7780546903d01dcbcd931673 jessie/2.3.5
-latest: git://github.com/rethinkdb/rethinkdb-dockerfiles@da98484fc73485fe7780546903d01dcbcd931673 jessie/2.3.5
+Tags: 2.4.0-centos
+Directory: centos8/2.4.0
+GitCommit: 444f7754822cb3e96cb2b66042d8e87d2227be0b

@@ -1,8 +1,19 @@
-# maintainer: Darin Morrison <darinmorrison+git@gmail.com> (@darinmorrison)
-# maintainer: Peter Salvatore <peter@psftw.com> (@psftw)
-# maintainer: Christopher Biscardi <chris@christopherbiscardi.com> (@chrisbiscardi)
+Maintainers: Peter Salvatore <peter@psftw.com> (@psftw),
+             Herbert Valerio Riedel <hvr@gnu.org> (@hvr)
+GitRepo: https://github.com/haskell/docker-haskell
 
-8.0.1: git://github.com/freebroccolo/docker-haskell@e0efde5504642864811a7697ab945067bb6a042e 8.0
-8.0: git://github.com/freebroccolo/docker-haskell@e0efde5504642864811a7697ab945067bb6a042e 8.0
-8: git://github.com/freebroccolo/docker-haskell@e0efde5504642864811a7697ab945067bb6a042e 8.0
-latest: git://github.com/freebroccolo/docker-haskell@e0efde5504642864811a7697ab945067bb6a042e 8.0
+Tags: 8.10.2-buster, 8.10-buster, 8-buster, buster, 8.10.2, 8.10, 8, latest
+GitCommit: fb5c774c38a7ab2e7d233d95368be0f899353496
+Directory: 8.10/buster
+
+Tags: 8.10.2-stretch, 8.10-stretch, 8-stretch, stretch
+GitCommit: fb5c774c38a7ab2e7d233d95368be0f899353496
+Directory: 8.10/stretch
+
+Tags: 8.8.4-buster, 8.8-buster, 8.8.4, 8.8
+GitCommit: fb5c774c38a7ab2e7d233d95368be0f899353496
+Directory: 8.8/buster
+
+Tags: 8.8.4-stretch, 8.8-stretch
+GitCommit: fb5c774c38a7ab2e7d233d95368be0f899353496
+Directory: 8.8/stretch

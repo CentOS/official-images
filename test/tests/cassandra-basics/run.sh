@@ -8,12 +8,14 @@ dir="$(dirname "$(readlink -f "$BASH_SOURCE")")"
 
 image="$1"
 
-# Use the image being tested as our client image since it should already have curl
+# Use the image being tested as our client image
 clientImage="$image"
 
 # Create an instance of the container-under-test
 cid="$(
 	docker run -d \
+		-e MAX_HEAP_SIZE='128m' \
+		-e HEAP_NEWSIZE='32m' \
 		-e JVM_OPTS='
 			-Dcom.sun.management.jmxremote.port=7199
 			-Dcom.sun.management.jmxremote.ssl=false
@@ -25,7 +27,11 @@ trap "docker rm -vf $cid > /dev/null" EXIT
 trap "( set -x; docker logs --tail=20 $cid )" ERR
 
 _status() {
-	docker run --rm --link "$cid":cassandra "$clientImage" nodetool -h cassandra status
+	docker run --rm \
+		--link "$cid":cassandra \
+		--entrypoint nodetool \
+		"$clientImage" \
+		-h cassandra status
 }
 
 # Make sure our container is up
@@ -34,8 +40,9 @@ _status() {
 cqlsh() {
 	docker run -i --rm \
 		--link "$cid":cassandra \
+		--entrypoint cqlsh \
 		"$clientImage" \
-		cqlsh -u cassandra -p cassandra "$@" cassandra
+		-u cassandra -p cassandra "$@" cassandra
 }
 
 # Make sure our container is listening

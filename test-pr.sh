@@ -32,11 +32,15 @@ pull="$1"
 shift || { usage >&2 && exit 1; }
 
 if [ -z "$BASHBREW_SECOND_STAGE" ]; then
-	dockerImage='bashbrew'
+	dockerRepo='oisupport/bashbrew'
+	dockerBase="$dockerRepo:base"
+	dockerImage="$dockerRepo:test-pr"
 
-	docker build --pull -t "$dockerImage" "$dir" > /dev/null
+	bashbrewVersion="$(< "$dir/bashbrew-version")"
+	docker build -t "$dockerBase" --pull "https://github.com/docker-library/bashbrew.git#v$bashbrewVersion" > /dev/null
+	docker build -t "$dockerImage" "$dir" > /dev/null
 
-	args=()
+	args=( --init )
 
 	if [ "$pull" = '0' ]; then
 		args+=( --name "bashbrew-test-local-$RANDOM" )
@@ -83,13 +87,21 @@ if [ -z "$BASHBREW_SECOND_STAGE" ]; then
 		--user "$(id -u)":"$(id -g)"
 		$(id -G | xargs -n1 echo --group-add)
 
-		-e BASHBREW_DEBUG
 		-e BASHBREW_SECOND_STAGE=1
 	)
 
+	for e in "${!BASHBREW_@}"; do
+		case "$e" in
+			BASHBREW_SECOND_STAGE|BASHBREW_CACHE|BASHBREW_LIBRARY) ;;
+			*)
+				args+=( -e "$e" )
+				;;
+		esac
+	done
+
 	cmd=( ./test-pr.sh "$pull" "$@" )
 
-	if [ -t 1 ]; then
+	if [ -t 0 ] && [ -t 1 ]; then
 		# only add "-t" if we have a TTY
 		args+=( -t )
 	fi
@@ -152,37 +164,54 @@ IFS=$'\n'
 files=( $(bashbrew list --repos --uniq --build-order "${files[@]}") )
 unset IFS
 
-echo 'Build test of' '#'"$pull"';' "$commit" '(`'"$(join '`, `' "${files[@]}")"'`):'
-failedBuild=()
-failedTests=()
+echo 'Build test of' '#'"$pull"';' "$commit"';' '`'"${BASHBREW_ARCH:-amd64}"'`' '(`'"$(join '`, `' "${files[@]}")"'`):'
+declare -A failedBuild=() failedTests=()
 for img in "${files[@]}"; do
 	IFS=$'\n'
-	uniqImgs=( $(bashbrew list --uniq "$img") )
+	uniqImgs=( $(bashbrew list --uniq --build-order "$img") )
+	uniqImgs=( $(bashbrew cat --format '{{ if .TagEntry.HasArchitecture arch }}{{ $.RepoName }}:{{ .TagEntry.Tags | first }}{{ end }}' "${uniqImgs[@]}") ) # filter to just the set supported by the current BASHBREW_ARCH
 	unset IFS
 
 	echo
 	echo '```console'
 	for uniqImg in "${uniqImgs[@]}"; do
+		imgRepo="${uniqImg%%:*}"
 		echo
 		echo '$ bashbrew build' "$uniqImg"
 		if bashbrew build --pull=missing "$uniqImg"; then
 			echo
 			echo '$ test/run.sh' "$uniqImg"
 			if ! ./test/run.sh "$uniqImg"; then
-				failedTests+=( "$uniqImg" )
+				failedTests[$imgRepo]+=" $uniqImg"
 			fi
 		else
-			failedBuild+=( "$uniqImg" )
+			failedBuild[$imgRepo]+=" $uniqImg"
 		fi
 		echo
 	done
 	echo '```'
 done
+echo
 if [ "${#failedBuild[@]}" -gt 0 ]; then
+	echo 'The following images failed to build:'
 	echo
-	echo 'The following images failed to build:' "${failedBuild[@]}"
+	for repo in "${!failedBuild[@]}"; do
+		echo '- `'"$repo"'`:'
+		for img in ${failedBuild[$repo]}; do
+			echo '  - `'"$img"'`'
+		done
+	done
+	echo
 fi
 if [ "${#failedTests[@]}" -gt 0 ]; then
 	echo
-	echo 'The following images failed at least one test:' "${failedTests[@]}"
+	echo 'The following images failed at least one test:'
+	echo
+	for repo in "${!failedTests[@]}"; do
+		echo '- `'"$repo"'`:'
+		for img in ${failedTests[$repo]}; do
+			echo '  - `'"$img"'`'
+		done
+	done
+	echo
 fi

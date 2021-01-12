@@ -1,5 +1,14 @@
-# maintainer: Henrik Feldt <henrik@haf.se> (@haf)
+Maintainers: Dave Curylo <dave@curylo.org> (@ninjarobot),
+             Steve Desmond <steve@stevedesmond.ca> (@stevedesmond-ca)
+GitRepo: https://github.com/fsprojects/docker-fsharp.git
+GitCommit: a47a73b4b99d85720e191680e29f1bd1d62724ea
 
-4.0.0.4: git://github.com/fsprojects/docker-fsharp@57b3ddadc85a63bf586ab89b523bb8326dad9c12 4.0.0.4
-4.0.1.1: git://github.com/fsprojects/docker-fsharp@57b3ddadc85a63bf586ab89b523bb8326dad9c12 4.0.1.1
-latest: git://github.com/fsprojects/docker-fsharp@57b3ddadc85a63bf586ab89b523bb8326dad9c12 4.0.1.1
+Tags: latest, 10, 10.10, 10.10.0
+Architectures: amd64, arm64v8
+Directory: 10.10.0/mono
+
+Tags: 4, 4.1, 4.1.34
+Directory: 4.1.34/mono
+
+Tags: netcore, 10-netcore, 10.10-netcore, 10.10.0-netcore
+Directory: 10.10.0/netcore

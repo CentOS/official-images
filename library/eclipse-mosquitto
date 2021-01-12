@@ -1,10 +1,19 @@
-Maintainers: David Audet <david.audet@ca.com> (@daudetCA)
+Maintainers: Roger Light <roger@atchoo.org> (@ralight)
 GitRepo: https://github.com/eclipse/mosquitto.git
+GitCommit: e78c04de9bd64b622d1e18f459be933968a20a91
+Architectures: amd64, arm32v6, arm64v8, i386, ppc64le, s390x
 
-Tags: 1.4.8, latest
-GitCommit: 5487395fb67ad2e2b6dac1ff67bd0ac289383f09
-Directory: docker/1.4.8
+Tags: 2.0.5, 2.0, 2
+Directory: docker/2.0
 
-Tags: 1.4.4
-GitCommit: 5487395fb67ad2e2b6dac1ff67bd0ac289383f09
-Directory: docker/1.4.4
+Tags: 2.0.5-openssl, 2.0-openssl, 2-openssl
+Directory: docker/2.0-openssl
+
+Tags: 1.6.12, 1.6, latest
+Directory: docker/1.6
+
+Tags: 1.6.12-openssl, 1.6-openssl, openssl
+Directory: docker/1.6-openssl
+
+Tags: 1.5.10, 1.5
+Directory: docker/1.5

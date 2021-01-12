@@ -1,25 +1,51 @@
-# maintainer: Yaroslav Halchenko <debian@onerussian.com> (@yarikoptic)
+Maintainers: Yaroslav Halchenko <debian@onerussian.com> (@yarikoptic)
+GitRepo: https://github.com/neurodebian/dockerfiles.git
+GitCommit: 920deb4853138c8b7fcae4b232c70e82269a3856
 
-precise: git://github.com/neurodebian/dockerfiles@336c4d3566c3c8311960c001e6032dab6d59c3b3 dockerfiles/precise
-nd12.04: git://github.com/neurodebian/dockerfiles@336c4d3566c3c8311960c001e6032dab6d59c3b3 dockerfiles/precise
+Tags: xenial, nd16.04
+Directory: dockerfiles/xenial
 
-trusty: git://github.com/neurodebian/dockerfiles@336c4d3566c3c8311960c001e6032dab6d59c3b3 dockerfiles/trusty
-nd14.04: git://github.com/neurodebian/dockerfiles@336c4d3566c3c8311960c001e6032dab6d59c3b3 dockerfiles/trusty
+Tags: xenial-non-free, nd16.04-non-free
+Directory: dockerfiles/xenial-non-free
 
-xenial: git://github.com/neurodebian/dockerfiles@336c4d3566c3c8311960c001e6032dab6d59c3b3 dockerfiles/xenial
-nd16.04: git://github.com/neurodebian/dockerfiles@336c4d3566c3c8311960c001e6032dab6d59c3b3 dockerfiles/xenial
+Tags: bionic, nd18.04
+Directory: dockerfiles/bionic
 
-yakkety: git://github.com/neurodebian/dockerfiles@336c4d3566c3c8311960c001e6032dab6d59c3b3 dockerfiles/yakkety
-nd16.10: git://github.com/neurodebian/dockerfiles@336c4d3566c3c8311960c001e6032dab6d59c3b3 dockerfiles/yakkety
+Tags: bionic-non-free, nd18.04-non-free
+Directory: dockerfiles/bionic-non-free
 
-wheezy: git://github.com/neurodebian/dockerfiles@336c4d3566c3c8311960c001e6032dab6d59c3b3 dockerfiles/wheezy
-nd70: git://github.com/neurodebian/dockerfiles@336c4d3566c3c8311960c001e6032dab6d59c3b3 dockerfiles/wheezy
+Tags: focal, nd20.04
+Directory: dockerfiles/focal
 
-jessie: git://github.com/neurodebian/dockerfiles@336c4d3566c3c8311960c001e6032dab6d59c3b3 dockerfiles/jessie
-nd80: git://github.com/neurodebian/dockerfiles@336c4d3566c3c8311960c001e6032dab6d59c3b3 dockerfiles/jessie
+Tags: focal-non-free, nd20.04-non-free
+Directory: dockerfiles/focal-non-free
 
-stretch: git://github.com/neurodebian/dockerfiles@336c4d3566c3c8311960c001e6032dab6d59c3b3 dockerfiles/stretch
-nd90: git://github.com/neurodebian/dockerfiles@336c4d3566c3c8311960c001e6032dab6d59c3b3 dockerfiles/stretch
+Tags: groovy, nd20.10
+Directory: dockerfiles/groovy
 
-sid: git://github.com/neurodebian/dockerfiles@336c4d3566c3c8311960c001e6032dab6d59c3b3 dockerfiles/sid
-nd: git://github.com/neurodebian/dockerfiles@336c4d3566c3c8311960c001e6032dab6d59c3b3 dockerfiles/sid
+Tags: groovy-non-free, nd20.10-non-free
+Directory: dockerfiles/groovy-non-free
+
+Tags: stretch, nd90
+Directory: dockerfiles/stretch
+
+Tags: stretch-non-free, nd90-non-free
+Directory: dockerfiles/stretch-non-free
+
+Tags: buster, nd100, latest
+Directory: dockerfiles/buster
+
+Tags: buster-non-free, nd100-non-free, non-free
+Directory: dockerfiles/buster-non-free
+
+Tags: bullseye, nd110
+Directory: dockerfiles/bullseye
+
+Tags: bullseye-non-free, nd110-non-free
+Directory: dockerfiles/bullseye-non-free
+
+Tags: sid, nd
+Directory: dockerfiles/sid
+
+Tags: sid-non-free, nd-non-free
+Directory: dockerfiles/sid-non-free

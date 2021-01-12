@@ -5,10 +5,18 @@ dir="$(dirname "$(readlink -f "$BASH_SOURCE")")"
 
 image="$1"
 
-# since we have curl in the tomcat image, we'll use that
-clientImage="$1"
+# Use a client image with curl for testing
+clientImage='buildpack-deps:buster-curl'
+# ensure the clientImage is ready and available
+if ! docker image inspect "$clientImage" &> /dev/null; then
+	docker pull "$clientImage" > /dev/null
+fi
 
-serverImage="$1"
+serverImage="$("$dir/../image-name.sh" librarytest/tomcat-hello-world "$image")"
+"$dir/../docker-build.sh" "$dir" "$serverImage" <<EOD
+FROM $image
+COPY dir/index.jsp \$CATALINA_HOME/webapps/ROOT/
+EOD
 
 # Create an instance of the container-under-test
 cid="$(docker run -d "$serverImage")"
@@ -18,16 +26,15 @@ _request() {
 	local url="${1#/}"
 	shift
 
-	docker run --rm --link "$cid":tomcat "$clientImage" \
-		wget -q -O - "$@" "http://tomcat:8080/$url"
+	docker run --rm \
+		--link "$cid":tomcat \
+		"$clientImage" \
+		curl -fsSL "$@" "http://tomcat:8080/$url"
 }
 
 # Make sure that Tomcat is listening
 . "$dir/../../retry.sh" '_request / &> /dev/null'
 
-# Check that we can request /
-[ -n "$(_request '/')" ]
-
-# Check that the example "Hello World" servlet works
-helloWorld="$(_request '/examples/servlets/servlet/HelloWorldExample')"
-[[ "$helloWorld" == *'Hello World!'* ]]
+# Check that our simple servlet works
+helloWorld="$(_request '/')"
+[[ "$helloWorld" == *'Hello Docker World!'* ]]

@@ -1,5 +1,8 @@
-# maintainer: Nick Cox <nickcox1008@gmail.com> (@knickers)
+# this file is generated via https://github.com/mongo-express/mongo-express-docker/blob/4b43fe8a1206434cb32a006cd155dd71462f092f/generate-stackbrew-library.sh
 
-0.32.0: git://github.com/mongo-express/mongo-express-docker@b080000a8c03ef81455fa6aca8c0c8d1a35ef365
-0.32: git://github.com/mongo-express/mongo-express-docker@b080000a8c03ef81455fa6aca8c0c8d1a35ef365
-latest: git://github.com/mongo-express/mongo-express-docker@b080000a8c03ef81455fa6aca8c0c8d1a35ef365
+Maintainers: Nick Cox <nickcox1008@gmail.com> (@knickers)
+GitRepo: https://github.com/mongo-express/mongo-express-docker.git
+GitCommit: 4b43fe8a1206434cb32a006cd155dd71462f092f
+
+Tags: 0.54.0, 0.54, latest
+Architectures: amd64, arm64v8

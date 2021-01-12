@@ -1,29 +1,75 @@
-# this file is generated via https://github.com/docker-library/wordpress/blob/637afb53dc03b4af19149a0880e796346f97c137/generate-stackbrew-library.sh
+# this file is generated via https://github.com/docker-library/wordpress/blob/8f5bcc1c980fce198bd191cfb7f51a3e76bb59cd/generate-stackbrew-library.sh
 
 Maintainers: Tianon Gravi <admwiggin@gmail.com> (@tianon),
              Joseph Ferguson <yosifkit@gmail.com> (@yosifkit)
 GitRepo: https://github.com/docker-library/wordpress.git
 
-Tags: 4.7.0-apache, 4.7-apache, 4-apache, apache, 4.7.0, 4.7, 4, latest, 4.7.0-php5.6-apache, 4.7-php5.6-apache, 4-php5.6-apache, php5.6-apache, 4.7.0-php5.6, 4.7-php5.6, 4-php5.6, php5.6
-GitCommit: 637afb53dc03b4af19149a0880e796346f97c137
-Directory: php5.6/apache
+Tags: 5.6.0-apache, 5.6-apache, 5-apache, apache, 5.6.0, 5.6, 5, latest, 5.6.0-php7.4-apache, 5.6-php7.4-apache, 5-php7.4-apache, php7.4-apache, 5.6.0-php7.4, 5.6-php7.4, 5-php7.4, php7.4
+Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, mips64le, ppc64le, s390x
+GitCommit: af6cc1c9637878a7d3c59c1a451f202533189b96
+Directory: latest/php7.4/apache
 
-Tags: 4.7.0-fpm, 4.7-fpm, 4-fpm, fpm, 4.7.0-php5.6-fpm, 4.7-php5.6-fpm, 4-php5.6-fpm, php5.6-fpm
-GitCommit: 637afb53dc03b4af19149a0880e796346f97c137
-Directory: php5.6/fpm
+Tags: 5.6.0-fpm, 5.6-fpm, 5-fpm, fpm, 5.6.0-php7.4-fpm, 5.6-php7.4-fpm, 5-php7.4-fpm, php7.4-fpm
+Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, mips64le, ppc64le, s390x
+GitCommit: af6cc1c9637878a7d3c59c1a451f202533189b96
+Directory: latest/php7.4/fpm
 
-Tags: 4.7.0-fpm-alpine, 4.7-fpm-alpine, 4-fpm-alpine, fpm-alpine, 4.7.0-php5.6-fpm-alpine, 4.7-php5.6-fpm-alpine, 4-php5.6-fpm-alpine, php5.6-fpm-alpine
-GitCommit: 637afb53dc03b4af19149a0880e796346f97c137
-Directory: php5.6/fpm-alpine
+Tags: 5.6.0-fpm-alpine, 5.6-fpm-alpine, 5-fpm-alpine, fpm-alpine, 5.6.0-php7.4-fpm-alpine, 5.6-php7.4-fpm-alpine, 5-php7.4-fpm-alpine, php7.4-fpm-alpine
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, s390x
+GitCommit: af6cc1c9637878a7d3c59c1a451f202533189b96
+Directory: latest/php7.4/fpm-alpine
 
-Tags: 4.7.0-php7.0-apache, 4.7-php7.0-apache, 4-php7.0-apache, php7.0-apache, 4.7.0-php7.0, 4.7-php7.0, 4-php7.0, php7.0
-GitCommit: 637afb53dc03b4af19149a0880e796346f97c137
-Directory: php7.0/apache
+Tags: 5.6.0-php7.3-apache, 5.6-php7.3-apache, 5-php7.3-apache, php7.3-apache, 5.6.0-php7.3, 5.6-php7.3, 5-php7.3, php7.3
+Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, mips64le, ppc64le, s390x
+GitCommit: af6cc1c9637878a7d3c59c1a451f202533189b96
+Directory: latest/php7.3/apache
 
-Tags: 4.7.0-php7.0-fpm, 4.7-php7.0-fpm, 4-php7.0-fpm, php7.0-fpm
-GitCommit: 637afb53dc03b4af19149a0880e796346f97c137
-Directory: php7.0/fpm
+Tags: 5.6.0-php7.3-fpm, 5.6-php7.3-fpm, 5-php7.3-fpm, php7.3-fpm
+Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, mips64le, ppc64le, s390x
+GitCommit: af6cc1c9637878a7d3c59c1a451f202533189b96
+Directory: latest/php7.3/fpm
 
-Tags: 4.7.0-php7.0-fpm-alpine, 4.7-php7.0-fpm-alpine, 4-php7.0-fpm-alpine, php7.0-fpm-alpine
-GitCommit: 637afb53dc03b4af19149a0880e796346f97c137
-Directory: php7.0/fpm-alpine
+Tags: 5.6.0-php7.3-fpm-alpine, 5.6-php7.3-fpm-alpine, 5-php7.3-fpm-alpine, php7.3-fpm-alpine
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, s390x
+GitCommit: af6cc1c9637878a7d3c59c1a451f202533189b96
+Directory: latest/php7.3/fpm-alpine
+
+Tags: cli-2.4.0, cli-2.4, cli-2, cli, cli-2.4.0-php7.4, cli-2.4-php7.4, cli-2-php7.4, cli-php7.4
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, s390x
+GitCommit: fe3078d7544bd0bd77e30e1121988234f426dff9
+Directory: cli/php7.4/alpine
+
+Tags: cli-2.4.0-php7.3, cli-2.4-php7.3, cli-2-php7.3, cli-php7.3
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, s390x
+GitCommit: fe3078d7544bd0bd77e30e1121988234f426dff9
+Directory: cli/php7.3/alpine
+
+Tags: beta-5.6.0-apache, beta-5.6-apache, beta-5-apache, beta-apache, beta-5.6.0, beta-5.6, beta-5, beta, beta-5.6.0-php7.4-apache, beta-5.6-php7.4-apache, beta-5-php7.4-apache, beta-php7.4-apache, beta-5.6.0-php7.4, beta-5.6-php7.4, beta-5-php7.4, beta-php7.4
+Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, mips64le, ppc64le, s390x
+GitCommit: 8f5bcc1c980fce198bd191cfb7f51a3e76bb59cd
+Directory: beta/php7.4/apache
+
+Tags: beta-5.6.0-fpm, beta-5.6-fpm, beta-5-fpm, beta-fpm, beta-5.6.0-php7.4-fpm, beta-5.6-php7.4-fpm, beta-5-php7.4-fpm, beta-php7.4-fpm
+Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, mips64le, ppc64le, s390x
+GitCommit: 8f5bcc1c980fce198bd191cfb7f51a3e76bb59cd
+Directory: beta/php7.4/fpm
+
+Tags: beta-5.6.0-fpm-alpine, beta-5.6-fpm-alpine, beta-5-fpm-alpine, beta-fpm-alpine, beta-5.6.0-php7.4-fpm-alpine, beta-5.6-php7.4-fpm-alpine, beta-5-php7.4-fpm-alpine, beta-php7.4-fpm-alpine
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, s390x
+GitCommit: 8f5bcc1c980fce198bd191cfb7f51a3e76bb59cd
+Directory: beta/php7.4/fpm-alpine
+
+Tags: beta-5.6.0-php7.3-apache, beta-5.6-php7.3-apache, beta-5-php7.3-apache, beta-php7.3-apache, beta-5.6.0-php7.3, beta-5.6-php7.3, beta-5-php7.3, beta-php7.3
+Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, mips64le, ppc64le, s390x
+GitCommit: 8f5bcc1c980fce198bd191cfb7f51a3e76bb59cd
+Directory: beta/php7.3/apache
+
+Tags: beta-5.6.0-php7.3-fpm, beta-5.6-php7.3-fpm, beta-5-php7.3-fpm, beta-php7.3-fpm
+Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, mips64le, ppc64le, s390x
+GitCommit: 8f5bcc1c980fce198bd191cfb7f51a3e76bb59cd
+Directory: beta/php7.3/fpm
+
+Tags: beta-5.6.0-php7.3-fpm-alpine, beta-5.6-php7.3-fpm-alpine, beta-5-php7.3-fpm-alpine, beta-php7.3-fpm-alpine
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, s390x
+GitCommit: 8f5bcc1c980fce198bd191cfb7f51a3e76bb59cd
+Directory: beta/php7.3/fpm-alpine

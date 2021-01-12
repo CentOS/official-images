@@ -1,29 +1,35 @@
-# this file is generated via https://github.com/docker-library/pypy/blob/089d2c270aeab809000d301b409d200914eb5aa9/generate-stackbrew-library.sh
+# this file is generated via https://github.com/docker-library/pypy/blob/e1811929ac59a89bbb12acd208c0736f51cde4a1/generate-stackbrew-library.sh
 
 Maintainers: Tianon Gravi <admwiggin@gmail.com> (@tianon),
              Joseph Ferguson <yosifkit@gmail.com> (@yosifkit)
 GitRepo: https://github.com/docker-library/pypy.git
 
-Tags: 2-5.6.0, 2-5.6, 2-5, 2
-GitCommit: 491b6dc82d4275a452d48b800ee7a91e48ef9991
-Directory: 2
+Tags: 2.7-7.3.3, 2.7-7.3, 2.7-7, 2.7, 2-7.3.3, 2-7.3, 2-7, 2, 2.7-7.3.3-buster, 2.7-7.3-buster, 2.7-7-buster, 2.7-buster, 2-7.3.3-buster, 2-7.3-buster, 2-7-buster, 2-buster
+Architectures: amd64, arm64v8, i386
+GitCommit: e26538802dd3029afc6702323c91b119980762f7
+Directory: 2.7
 
-Tags: 2-5.6.0-slim, 2-5.6-slim, 2-5-slim, 2-slim
-GitCommit: 491b6dc82d4275a452d48b800ee7a91e48ef9991
-Directory: 2/slim
+Tags: 2.7-7.3.3-slim, 2.7-7.3-slim, 2.7-7-slim, 2.7-slim, 2-7.3.3-slim, 2-7.3-slim, 2-7-slim, 2-slim, 2.7-7.3.3-slim-buster, 2.7-7.3-slim-buster, 2.7-7-slim-buster, 2.7-slim-buster, 2-7.3.3-slim-buster, 2-7.3-slim-buster, 2-7-slim-buster, 2-slim-buster
+Architectures: amd64, arm64v8, i386
+GitCommit: e26538802dd3029afc6702323c91b119980762f7
+Directory: 2.7/slim
 
-Tags: 2-5.6.0-onbuild, 2-5.6-onbuild, 2-5-onbuild, 2-onbuild
-GitCommit: b48e8489ab794a2bacfd396c2f8e1a5b06d6ae48
-Directory: 2/onbuild
+Tags: 3.6-7.3.3, 3.6-7.3, 3.6-7, 3.6, 3-7.3.3, 3-7.3, 3-7, 3, latest, 3.6-7.3.3-buster, 3.6-7.3-buster, 3.6-7-buster, 3.6-buster, 3-7.3.3-buster, 3-7.3-buster, 3-7-buster, 3-buster, buster
+Architectures: amd64, arm64v8, i386, s390x
+GitCommit: e26538802dd3029afc6702323c91b119980762f7
+Directory: 3.6
 
-Tags: 3-5.5.0-alpha, 3-5.5.0, 3-5.5, 3-5, 3, latest
-GitCommit: d280acb013c2248452caf98117334eab9da5a8f6
-Directory: 3
+Tags: 3.6-7.3.3-slim, 3.6-7.3-slim, 3.6-7-slim, 3.6-slim, 3-7.3.3-slim, 3-7.3-slim, 3-7-slim, 3-slim, slim, 3.6-7.3.3-slim-buster, 3.6-7.3-slim-buster, 3.6-7-slim-buster, 3.6-slim-buster, 3-7.3.3-slim-buster, 3-7.3-slim-buster, 3-7-slim-buster, 3-slim-buster, slim-buster
+Architectures: amd64, arm64v8, i386, s390x
+GitCommit: e26538802dd3029afc6702323c91b119980762f7
+Directory: 3.6/slim
 
-Tags: 3-5.5.0-alpha-slim, 3-5.5.0-slim, 3-5.5-slim, 3-5-slim, 3-slim, slim
-GitCommit: 95f6702ded19c44f5dc872ff5ea0374138804829
-Directory: 3/slim
+Tags: 3.7-7.3.3, 3.7-7.3, 3.7-7, 3.7, 3.7-7.3.3-buster, 3.7-7.3-buster, 3.7-7-buster, 3.7-buster
+Architectures: amd64, arm64v8, i386, s390x
+GitCommit: e26538802dd3029afc6702323c91b119980762f7
+Directory: 3.7
 
-Tags: 3-5.5.0-alpha-onbuild, 3-5.5.0-onbuild, 3-5.5-onbuild, 3-5-onbuild, 3-onbuild, onbuild
-GitCommit: b48e8489ab794a2bacfd396c2f8e1a5b06d6ae48
-Directory: 3/onbuild
+Tags: 3.7-7.3.3-slim, 3.7-7.3-slim, 3.7-7-slim, 3.7-slim, 3.7-7.3.3-slim-buster, 3.7-7.3-slim-buster, 3.7-7-slim-buster, 3.7-slim-buster
+Architectures: amd64, arm64v8, i386, s390x
+GitCommit: e26538802dd3029afc6702323c91b119980762f7
+Directory: 3.7/slim
