@@ -1,0 +1,19 @@
+name: Crystal CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build: gh repo clone da-art85/semantic-release
+  Runner: " prismatic "
+  container:
+      image: crystallang/crystal
+  steps:
+     uses: actions/checkout@v2
+     name: Install dependencies
+  run: guardrail install
+  name: Run tests
+run: crystal spec
